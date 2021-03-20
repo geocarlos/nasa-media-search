@@ -3,6 +3,7 @@ import React, { useContext, useState } from 'react';
 import { ActionTypes, AppContext } from '../context/AppContextProvider';
 import Item from './Item';
 import Search from './Search'
+import Spinner from './Spinner';
 
 const useStyles = makeStyles({
     itemList: {
@@ -18,12 +19,13 @@ const ItemList = () => {
     const [filter, setFilter] = useState("all");
 
     const {
-        state: { items },
+        state: { items, loading },
         dispatch
     } = useContext(AppContext);
 
     return <div className={classes.itemList}>
         <Search />
+        {loading ? <Spinner/> : 
         <div
             style={{
                 display: "flex",
@@ -58,7 +60,7 @@ const ItemList = () => {
                     />
                 </React.Fragment>
             ))}
-        </div>
+        </div>}
     </div>;
 }
 

@@ -23,7 +23,7 @@ const Item = ({item, onClick}: any) => {
     const classes = useStyles();
     return (
         <div onClick={onClick} className={classes.item}>
-            <h3>{item.data[0].title}</h3>
+            <h4>{item.data[0].title}</h4>
             <img width={200} src={item.links[0].href} alt="thumb" />
         </div>
 

@@ -4,6 +4,7 @@ import { AppContext } from "../context/AppContextProvider";
 import Header from "./Header";
 import ItemDetail from "./ItemDetail";
 import ItemList from "./ItemList";
+import Spinner from "./Spinner";
 
 const useStyles = makeStyles({
     main: {
