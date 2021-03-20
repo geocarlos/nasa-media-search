@@ -1,3 +1,0 @@
-# NASA Media Search
-
-A simple React API developed as a demonstration of app development with React for JUG HUÍLA 21ª Edição, held as online by Fênix Innovation on March 20th, 2021.
