@@ -4,3 +4,5 @@ A simple React application developed as a demonstration of app development with 
 
 To install the app, cd into its root directory and run `npm install`.
 For more commands, please refer to the section "scripts" in the `package.json` file.
+
+You can view the deploy app [here](https://geocarlos.github.io/nasa-media-search/).
