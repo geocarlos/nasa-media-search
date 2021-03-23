@@ -74,7 +74,7 @@ const ItemDetail = () => {
                         poster={itemMedia?.images[0]?.href}
                         controls
                     >
-                        <source src={itemMedia?.videos[3]?.href} type="video/mp4" />
+                        <source src={itemMedia?.videos[2]?.href} type="video/mp4" />
                     </video>
                 ) : (
                     <img

@@ -33,7 +33,7 @@ const ItemList = () => {
                 justifyContent: "center"
             }}
         >
-            <div style={{width: '100%', display: 'flex', justifyContent: 'start', padding: '1rem 5rem'}}>
+            {items.length > 0 ? <div style={{width: '100%', display: 'flex', justifyContent: 'start', padding: '1rem 5rem'}}>
                 <select
                     style={{ height: "fit-content" }}
                     value={filter}
@@ -43,7 +43,7 @@ const ItemList = () => {
                     <option value="image">Images</option>
                     <option value="video">Videos</option>
                 </select>
-            </div>
+            </div> : <div style={{display: 'flex', height: '40vh', alignItems: 'center'}}>Your search results will show here</div>}
             {(filter === "all"
                 ? items
                 : items.filter((i: any) => i.data[0].media_type === filter)

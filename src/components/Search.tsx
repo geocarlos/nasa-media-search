@@ -11,7 +11,8 @@ const Search = () => {
     setQuery(target.value);
   };
 
-  const handleFetch = () => {
+  const handleFetch = (event: React.FormEvent<HTMLFormElement>) => {
+	event.preventDefault();
     if (!query) {
       return;
     }
@@ -23,10 +24,10 @@ const Search = () => {
   };
 
   return (
-    <div style={{ width: "100%", display: "flex", padding: "1rem 2rem" }}>
+    <form onSubmit={handleFetch} style={{ width: "100%", display: "flex", padding: "1rem 2rem" }}>
       <TextField label="Search images and videos" onChange={onQueryChange} style={{ flex: 1 }} />
-      <Button style={{height: 'fit-content'}} variant="contained" color="primary" onClick={handleFetch}>Search</Button>
-    </div>
+      <Button style={{height: 'fit-content'}} variant="contained" color="primary">Search</Button>
+    </form>
   );
 };
 
