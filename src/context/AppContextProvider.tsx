@@ -13,7 +13,7 @@ export interface AppState {
   items: any[];
   selectedItem: any;
   loading: boolean;
-  error: null;
+  error: any;
 }
 
 export interface Action {
