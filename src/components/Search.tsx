@@ -26,7 +26,7 @@ const Search = () => {
   return (
     <form onSubmit={handleFetch} style={{ width: "100%", display: "flex", padding: "1rem 2rem" }}>
       <TextField label="Search images and videos" onChange={onQueryChange} style={{ flex: 1 }} />
-      <Button style={{height: 'fit-content'}} variant="contained" color="primary">Search</Button>
+      <Button type="submit" style={{height: 'fit-content'}} variant="contained" color="primary">Search</Button>
     </form>
   );
 };
